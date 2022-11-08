@@ -1,0 +1,5 @@
+export { default as AudioVideoScreen } from "./AudioVideo"
+export { default as AcelerometroScreen } from "./Acelerometro"
+export { default as PedometroScreen } from "./Pedometro"
+export { default as MagnetometroScreen } from "./Magnetometro"
+export { default as GiroscopioScreen } from "./Giroscopio"
