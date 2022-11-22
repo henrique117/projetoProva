@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     },
     fundo: {
         width: '100%',
+        height: '80%'
     }
 });
 

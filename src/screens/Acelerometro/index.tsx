@@ -16,7 +16,7 @@ export default function Acelerometro() {
     };
 
     const _fast = () => {
-        Accelerometer.setUpdateInterval(16);
+        Accelerometer.setUpdateInterval(30);
     };
 
     const _subscribe = () => {
@@ -51,8 +51,9 @@ export default function Acelerometro() {
                     height: 50,
                     flex: 1,
                     position: 'absolute',
-                    top: 150,
-                    left: (Dimensions.get("window").width * Math.pow(data.x, 2))
+                    bottom: (Dimensions.get("window").width * Math.pow(data.y, 2)),
+                    left: (Dimensions.get("window").width * Math.pow(data.x, 2)),
+                    marginBottom: 160
                 }}
             />
             <View style={styles.container}>

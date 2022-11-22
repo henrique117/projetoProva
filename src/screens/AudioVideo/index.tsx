@@ -63,9 +63,8 @@ export default function App() {
                 ref={video}
                 style={styles.Video}
                 source={{
-                    uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
+                    uri: 'https://download.samplelib.com/mp4/sample-5s.mp4',
                 }}
-                useNativeControls
                 resizeMode="contain"
                 isLooping
                 onPlaybackStatusUpdate={status => setStatus(() => status)}
@@ -84,7 +83,7 @@ export default function App() {
             </View>
             <View style={styles.buttons}>
                 <ButtonComp
-                    type='primary'
+                    type='secondary'
                     title={recording ? 'Parar Gravação' : 'Iniciar Gravação'}
                     onPress={recording ? stopRecording : startRecording}
                 />
@@ -92,7 +91,7 @@ export default function App() {
             <View style={styles.buttons}>
                 {soundUri && (
                     <ButtonComp
-                        type='primary' title='Tocar som' onPress={playSound}
+                        type='third' title='Tocar som' onPress={playSound}
                     />
                 )}
             </View>

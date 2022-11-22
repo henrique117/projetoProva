@@ -1,6 +1,6 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { AudioVideoScreen, AcelerometroScreen, PedometroScreen, MagnetometroScreen, GiroscopioScreen } from "../screens";
+import { AudioVideoScreen, AcelerometroScreen } from "../screens";
 import { MaterialCommunityIcons, FontAwesome, Foundation } from "@expo/vector-icons";
 import colors from "../styles/colors";
 
@@ -11,9 +11,9 @@ export default function TabNavigation() {
         <Tab.Navigator
             screenOptions={{
                 headerShown: false,
-                tabBarActiveBackgroundColor: colors.primary,
+                tabBarActiveBackgroundColor: colors.yellow,
                 tabBarActiveTintColor: colors.white,
-                tabBarInactiveBackgroundColor: colors.primary,
+                tabBarInactiveBackgroundColor: colors.yellowLight,
                 tabBarInactiveTintColor: colors.white,
             }}
         >
@@ -32,33 +32,6 @@ export default function TabNavigation() {
                 options={{
                     tabBarIcon: () => (
                         <FontAwesome name="car" size={24} color={colors.white} />
-                    ),
-                }}
-            />
-            <Tab.Screen
-                name="Pedometro"
-                component={PedometroScreen}
-                options={{
-                    tabBarIcon: () => (
-                        <Foundation name="foot" size={24} color={colors.white} />
-                    ),
-                }}
-            />
-            <Tab.Screen
-                name="Magneto"
-                component={MagnetometroScreen}
-                options={{
-                    tabBarIcon: () => (
-                        <FontAwesome name="magnet" size={24} color={colors.white} />
-                    ),
-                }}
-            />
-            <Tab.Screen
-                name="Giroscopio"
-                component={GiroscopioScreen}
-                options={{
-                    tabBarIcon: () => (
-                        <FontAwesome name="balance-scale" size={24} color={colors.white} />
                     ),
                 }}
             />

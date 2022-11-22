@@ -1,10 +1,10 @@
 export default {
     black: '#000000',
     white: '#ffffff',
-    primary: '#455A64',
-    primaryLight: '#CFD8DC',
-    secondary: '#7E57C2',
-    secondaryLight: '#B39DDB',
-    third: '#FFB74D',
-    thirdLight: '#FFE9CA'
+    brown: '#8D6E63',
+    brownLight: '#D7CCC8',
+    yellow: '#DAA520',
+    yellowLight: '#FFD700',
+    green: '#26A69A',
+    greenLight: '#B2DFDB'
   }
